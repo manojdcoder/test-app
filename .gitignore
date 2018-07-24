@@ -1,0 +1,36 @@
+# mac 
+.DS_Store 
+ 
+# node 
+npm-debug.log 
+node_modules 
+ 
+# webpack 
+report 
+ 
+# complied 
+/app/**/*.css 
+/app/**/*.js 
+/app/**/*.map 
+/app-utils/*.js 
+/ui-helper/*.js 
+/hooks/**/*.js 
+/lib 
+/platforms 
+/tmp 
+/typings 
+  
+# i18n (complied)  
+/app/App_Resources/iOS/**/*.strings  
+/app/App_Resources/Android/**/strings.xml  
+  
+### exceptions ###  
+  
+# https://github.com/AntonioCuevaUrraco/nativescript-timedatepicker/issues/41  
+!/hooks/before-prepare/nativescript-timedatepicker.js  
+  
+# typescript helpers 
+!/app/core/ts-helpers.js 
+ 
+# font icon 
+!/app/fonts/*.css
