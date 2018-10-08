@@ -55,3 +55,9 @@ export module ad {
         }
     }
 }
+
+export module ios {
+    export function setStatusBarColor(color: string) {
+        // do nothing
+    }
+}

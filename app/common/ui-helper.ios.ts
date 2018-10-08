@@ -204,13 +204,13 @@ export module ios {
     }
 }
 
-Font.prototype.withFontSize = function (size: number): Font {
-    const fontFamily = this.fontFamily;
-    if (!ignoreScale.has(fontFamily)) {
-        size = size * cachedFontScale;
-    }
-    return new Font(fontFamily, size, this.fontStyle, this.fontWeight);
-};
+// Font.prototype.withFontSize = function (size: number): Font {
+//     const fontFamily = this.fontFamily;
+//     if (!ignoreScale.has(fontFamily)) {
+//         size = size * cachedFontScale;
+//     }
+//     return new Font(fontFamily, size, this.fontStyle, this.fontWeight);
+// };
 
 (<any>ScrollView.prototype).originalAttachNative = (<any>ScrollView.prototype).attachNative;
 (<any>ScrollView.prototype).attachNative = function () {
@@ -219,3 +219,9 @@ Font.prototype.withFontSize = function (size: number): Font {
     this._delegate = newDelegate;
     this.nativeViewProtected.delegate = newDelegate;
 };
+
+export declare module ad {
+    export class AutoFocusView { 
+        // do nothing
+    }
+}
